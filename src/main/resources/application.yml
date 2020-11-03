@@ -1,0 +1,12 @@
+micronaut:
+  application:
+    name: micrometerConfigurer
+  metrics:
+    enabled: true
+    export:
+      statsd:
+        enabled: true
+        flavor: datadog
+        host: localhost
+        port: 8125
+        step: PT1M
